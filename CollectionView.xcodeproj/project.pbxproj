@@ -13,6 +13,8 @@
 		C045E3FB1E5C775D008D09EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C045E3F91E5C775D008D09EB /* Main.storyboard */; };
 		C045E3FD1E5C775D008D09EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C045E3FC1E5C775D008D09EB /* Assets.xcassets */; };
 		C045E4001E5C775D008D09EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C045E3FE1E5C775D008D09EB /* LaunchScreen.storyboard */; };
+		C045E4081E5C7D3C008D09EB /* MYXJ_20160203210654_fast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C045E4071E5C7D3C008D09EB /* MYXJ_20160203210654_fast.jpg */; };
+		C045E40B1E5C7D68008D09EB /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C045E40A1E5C7D68008D09EB /* MyCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		C045E3FC1E5C775D008D09EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C045E3FF1E5C775D008D09EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C045E4011E5C775D008D09EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C045E4071E5C7D3C008D09EB /* MYXJ_20160203210654_fast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MYXJ_20160203210654_fast.jpg; sourceTree = "<group>"; };
+		C045E4091E5C7D68008D09EB /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		C045E40A1E5C7D68008D09EB /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 		C045E3E41E5C775D008D09EB = {
 			isa = PBXGroup;
 			children = (
+				C045E4071E5C7D3C008D09EB /* MYXJ_20160203210654_fast.jpg */,
 				C045E3EF1E5C775D008D09EB /* CollectionView */,
 				C045E3EE1E5C775D008D09EB /* Products */,
 			);
@@ -62,6 +68,8 @@
 				C045E3F41E5C775D008D09EB /* AppDelegate.m */,
 				C045E3F61E5C775D008D09EB /* ViewController.h */,
 				C045E3F71E5C775D008D09EB /* ViewController.m */,
+				C045E4091E5C7D68008D09EB /* MyCollectionViewCell.h */,
+				C045E40A1E5C7D68008D09EB /* MyCollectionViewCell.m */,
 				C045E3F91E5C775D008D09EB /* Main.storyboard */,
 				C045E3FC1E5C775D008D09EB /* Assets.xcassets */,
 				C045E3FE1E5C775D008D09EB /* LaunchScreen.storyboard */,
@@ -140,6 +148,7 @@
 				C045E4001E5C775D008D09EB /* LaunchScreen.storyboard in Resources */,
 				C045E3FD1E5C775D008D09EB /* Assets.xcassets in Resources */,
 				C045E3FB1E5C775D008D09EB /* Main.storyboard in Resources */,
+				C045E4081E5C7D3C008D09EB /* MYXJ_20160203210654_fast.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,7 @@
 			files = (
 				C045E3F81E5C775D008D09EB /* ViewController.m in Sources */,
 				C045E3F51E5C775D008D09EB /* AppDelegate.m in Sources */,
+				C045E40B1E5C7D68008D09EB /* MyCollectionViewCell.m in Sources */,
 				C045E3F21E5C775D008D09EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
