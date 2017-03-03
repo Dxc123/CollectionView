@@ -37,13 +37,16 @@
     collectionView.dataSource=self;
     //注册cell
     [collectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    //注册分区头
+    [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     [self.view addSubview:collectionView];
+    collectionView.backgroundColor=[UIColor yellowColor];
 }
 
 //UICollectionView代理方法
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 7;
+    return 9;
     
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -64,7 +67,23 @@
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
     return CGSizeMake(375, 40);
 }
-//自定义分区
+//自定义分区头
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    if (kind == UICollectionElementKindSectionHeader) {
+        UICollectionReusableView *view=[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath  ];
+        view.backgroundColor=[UIColor grayColor];
+        view.alpha=0.6;
+    return view;
+    }
+    return nil;
+}
+//点击item方法
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%s",__func__);
+
+    NSLog(@"你点击了第%ld分区的第%ld个人",indexPath.section,indexPath.row);
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
